@@ -78,10 +78,35 @@ file.close()
 
 # 06.09 - With Construct
 ## prevents excessive resource usage
-with open("read.txt", "r") as file:
+# with open("read.txt", "r") as file:
     # for line in file:
     #     print(line.strip())
 
+# 06.10 - Read a CSV
+
+with open("file.csv") as file:
+    for line in file:
+        ## takes each line and creates a list from it, splitting on the semicolon. USEFUL
+        data = (line.strip().split(";"))
+        print(data[0] + " Population: " + data[1] + " / Airport Shortcut: " + data[2])
+print("\n")
+
+# 06.11 Read CSV and Skip Data
+# with open("file.csv") as file:
+#     for line in file:
+#         data = (line.strip().split(";"))
+#         if int(data[1]) < 2000000:
+#             continue
+#         if data[2] == "BUD":
+#             continue
+#         print(data)
+
+#matplotlib inline
+import matplotlib.pyplot as plt
 
 
+xs = [1,2,3]
+ys = [4,7,5]
 
+plt.plot(xs, ys)
+plt.show()
