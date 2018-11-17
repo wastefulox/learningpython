@@ -84,12 +84,12 @@ file.close()
 
 # 06.10 - Read a CSV
 
-with open("file.csv") as file:
-    for line in file:
-        ## takes each line and creates a list from it, splitting on the semicolon. USEFUL
-        data = (line.strip().split(";"))
-        print(data[0] + " Population: " + data[1] + " / Airport Shortcut: " + data[2])
-print("\n")
+# with open("file.csv") as file:
+#     for line in file:
+#         ## takes each line and creates a list from it, splitting on the semicolon. USEFUL
+#         data = (line.strip().split(";"))
+#         print(data[0] + " Population: " + data[1] + " / Airport Shortcut: " + data[2])
+# print("\n")
 
 # 06.11 Read CSV and Skip Data
 # with open("file.csv") as file:
@@ -102,11 +102,29 @@ print("\n")
 #         print(data)
 
 #matplotlib inline
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
+#
+#
+# xs = [1,2,3]
+# ys = [4,7,5]
+#
+# plt.plot(xs, ys)
+# plt.show()
 
 
-xs = [1,2,3]
-ys = [4,7,5]
+# 06.15 - Birth Statistics Graphic
 
-plt.plot(xs, ys)
-plt.show()
+name = "Max"
+beginYear = 1950
+endYear = 2000
+gender = "M"
+state = "CA"
+
+with open("../CourseMaterial/data/names.csv", "r") as file:
+    totalBirths = 0
+    for line in file:
+        lineSplit = (line.strip().split(","))
+        #
+        if lineSplit[1] == name and lineSplit[3] == gender and lineSplit[4] == state and int(lineSplit[2]) >= beginYear and int(lineSplit[2]) <= endYear:
+            totalBirths = totalBirths + int(lineSplit[5])
+    print(totalBirths) # for max, it returns 6385
