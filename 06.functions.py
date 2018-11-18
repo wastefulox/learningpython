@@ -113,18 +113,65 @@ file.close()
 
 
 # 06.15 - Birth Statistics Graphic
+#
+# name = "Max"
+# beginYear = 1950
+# endYear = 2000
+# gender = "M"
+# state = "CA"
+#
+# with open("../CourseMaterial/data/names.csv", "r") as file:
+#     totalBirths = 0
+#     for line in file:
+#         lineSplit = (line.strip().split(","))
+#         #
+#         if lineSplit[1] == name and lineSplit[3] == gender and lineSplit[4] == state and int(lineSplit[2]) >= beginYear and int(lineSplit[2]) <= endYear:
+#             totalBirths = totalBirths + int(lineSplit[5])
+#     print(totalBirths) # for max, it returns 6385
 
-name = "Max"
-beginYear = 1950
-endYear = 2000
-gender = "M"
-state = "CA"
+# 06.21 Final Exercise Tips
+# students = ["Max", "Lisa", "Moritz", "Eva"]
+#
+# #iterating through a list and changing values // setting values
+# print(len(students))
+# for i in range(0,len(students)):
+#     if students[i] == "Lisa":
+#         students[i] = "Lisa2"
+#
+# print(students)
 
-with open("../CourseMaterial/data/names.csv", "r") as file:
-    totalBirths = 0
-    for line in file:
-        lineSplit = (line.strip().split(","))
-        #
-        if lineSplit[1] == name and lineSplit[3] == gender and lineSplit[4] == state and int(lineSplit[2]) >= beginYear and int(lineSplit[2]) <= endYear:
-            totalBirths = totalBirths + int(lineSplit[5])
-    print(totalBirths) # for max, it returns 6385
+# write a function that calculates the totql price of the products in the shopping cart
+cartPrices = [20, 3.5, 6.49, 8.99, 9.99, 14.98]
+
+def listSum(l):
+    # here is where you put your code
+    totalPrice = 0
+    for i in l:
+        totalPrice = totalPrice + i
+    return totalPrice
+
+print(listSum(cartPrices))
+
+# write a function that creates a price table for an item.
+theList = []
+
+def priceList(name, price):
+    # my code goes here
+    for i in range(1,11):
+        statement = str(i) + " " + name + "s: " + str(i * price)
+        theList.append(statement)
+    return theList
+
+print(priceList("Cookie", 0.79))
+
+# write a function that fills the lists with the articles
+shelf = ["Magic Mirror", "empty", "Cookie", "Book with Magic Tricks", "empty"]
+
+def addShelf(article):
+    for i in range(len(shelf)):
+        if shelf[i] == "empty":
+            shelf[i] = article
+            break
+
+addShelf("Rubik's Cube")
+print(shelf)
