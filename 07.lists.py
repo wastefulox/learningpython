@@ -89,7 +89,7 @@
 # print(d)
 # print("\n")
 
-## Query: Is trhere an element in the dictionary
+## Query: Is there an element in the dictionary
 # if "Budapest" in d:
 #     print("Budapest is included in the dictionary")
 # if "Saigon" in d:
@@ -170,12 +170,46 @@ student = ("John Doe", 22, "Informatics")
 
 # 07.75 - The Dictionary Exercise
 with open("../CourseMaterial/data/names.csv", "r") as file:
-    count = 0
+    # count = 0
+    d = {}
     for line in file:
         lineSplit = line.strip().split(",")
-        count = count + 1
-        print(lineSplit)
+        # count = count + 1
+        # print(lineSplit)
+        if lineSplit[1] == "Name":
+            continue
 
-        if count >= 4:
-            break
+        if lineSplit[1] in d:
+            d[lineSplit[1]] = d[lineSplit[1]] + int(lineSplit[5])
+        else:
+            d[lineSplit[1]] = int(lineSplit[5])
 
+        # if count >= 1500000:
+        #     break
+
+name = ""
+maxOccurances = 0
+for key, value in d.items():
+    if value > maxOccurances:
+        name = key
+        maxOccurances = value
+    else:
+        continue
+
+
+print("The most popular name is " + name + " with " + str(maxOccurances) + " people named " + name)
+# print(d)
+
+
+
+
+# list1 = ["Hello", "Hello", "World", "Hello", "Mars"]
+
+# d = {}
+# for element in list1:
+#     if element  in d:
+#         d[element] = d[element] + 1
+#     else:
+#         d[element] = 1
+#
+# print(d)
