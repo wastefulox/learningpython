@@ -169,35 +169,35 @@ student = ("John Doe", 22, "Informatics")
 #     print(key + ": " + value)
 
 # 07.75 - The Dictionary Exercise
-with open("../CourseMaterial/data/names.csv", "r") as file:
-    # count = 0
-    d = {}
-    for line in file:
-        lineSplit = line.strip().split(",")
-        # count = count + 1
-        # print(lineSplit)
-        if lineSplit[1] == "Name":
-            continue
+# with open("../CourseMaterial/data/names.csv", "r") as file:
+#     # count = 0
+#     d = {}
+#     for line in file:
+#         lineSplit = line.strip().split(",")
+#         # count = count + 1
+#         # print(lineSplit)
+#         if lineSplit[1] == "Name":
+#             continue
+#
+#         if lineSplit[1] in d:
+#             d[lineSplit[1]] = d[lineSplit[1]] + int(lineSplit[5])
+#         else:
+#             d[lineSplit[1]] = int(lineSplit[5])
+#
+#         # if count >= 1500000:
+#         #     break
+#
+# name = ""
+# maxOccurances = 0
+# for key, value in d.items():
+#     if value > maxOccurances:
+#         name = key
+#         maxOccurances = value
+#     else:
+#         continue
+#
 
-        if lineSplit[1] in d:
-            d[lineSplit[1]] = d[lineSplit[1]] + int(lineSplit[5])
-        else:
-            d[lineSplit[1]] = int(lineSplit[5])
-
-        # if count >= 1500000:
-        #     break
-
-name = ""
-maxOccurances = 0
-for key, value in d.items():
-    if value > maxOccurances:
-        name = key
-        maxOccurances = value
-    else:
-        continue
-
-
-print("The most popular name is " + name + " with " + str(maxOccurances) + " people named " + name)
+# print("The most popular name is " + name + " with " + str(maxOccurances) + " people named " + name)
 # print(d)
 
 
@@ -213,3 +213,54 @@ print("The most popular name is " + name + " with " + str(maxOccurances) + " peo
 #         d[element] = 1
 #
 # print(d)
+
+# 07.77 - Exercise - Dictionaries
+## Read the ../data/names.csv file and calculate which name was assigned most often in the whole USA.
+
+# with open("../CourseMaterial/data/names.csv", "r") as file:
+#     # create the dictionary for which every name and count will live.
+#     d = {}
+#     for line in file:
+#         # break each line apart into its own list
+#         lineSplit = line.strip().split(",")
+#         # femove the first line, which has a value of Name
+#         if lineSplit[1] == "Name":
+#             continue
+#
+#         name = lineSplit[1]
+#         count = int(lineSplit[5])
+#
+#         # if the Name in the list is already in the dictionary.d, add the value of the births that year to the value field in the dictionary
+#         if name in d:
+#             d[name] = d[name] + count
+#         else:
+#             # if not, create the dictionary key with the value of the count that year.
+#             d[name] = count
+#
+# # field to capture the name
+# name = ""
+# # field to capture the maximum occurances
+# maxOccurances = 0
+#
+# # look at each value in dictionary d
+# for key, value in d.items():
+#     if value > maxOccurances:
+#         name = key
+#         maxOccurances = value
+#     else:
+#         continue
+#
+#
+# print("The most popular name is " + name + " with " + str(maxOccurances) + " people named " + name)
+
+
+# 07.78 - Nesting Lists
+list1 = [["New York", "Chicago", "Los Angeles"], ["Berlin", "Hamburg", "Frankfurt"]]
+print(list1[0][1])
+
+students = {
+    "Informatics":["Max", "Monika"],
+    "History":["Erik", "Franzeska"]
+}
+
+print(students["Informatics"][1])
