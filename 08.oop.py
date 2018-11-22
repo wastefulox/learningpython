@@ -60,4 +60,33 @@
 # monica = Student("Monika", "Fischer", 5)
 # monica.getInfo()
 
-# 08.84 -
+# 08.84 - Private Properties and Values within Classes
+class Student():
+    def __init__(self, firstname, lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+        # creating a double underscore makes an attribute private
+        self.__term = 1
+
+    def increaseTerm(self):
+        if self.__term >= 9:
+            return
+        self.__term = self.__term + 1
+
+    # allows user to see value without ability to edit it.
+    def getTerm(self):
+        return self.__term
+
+    def info(self):
+        print(self.firstname + " " + self.lastname + ", Semester: " + str(self.__term))
+
+    # functions with underscore should not be used outside of the class. This is developer etiquette.
+    def _doSomething(self):
+        print("doSomething")
+
+eric = Student("Eric", "Johnson")
+eric.increaseTerm()
+print(eric.getTerm())
+# we should not do this...
+eric._doSomething()
+eric.info()
