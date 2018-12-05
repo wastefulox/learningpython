@@ -101,14 +101,67 @@ class Phonebook():
     def add(self, name, phoneNumber):
         self.__entries[name] = phoneNumber
 
-    def getEntries(self, name):
+    def getNumber(self, name):
         if name in self.__entries:
             return self.__entries[name]
         else:
             return None
 
-book = Phonebook()
-book.add("Miller", "1234567")
-book.add("Fischer", "2345678")
+# book = Phonebook()
+# book.add("Miller", "1234567")
+# book.add("Fischer", "2345678")
 
-print(book.getEntries("Miller"))
+# print(book.getNumber("Fischer"))
+
+# 08.86 - Special Methods that Classes can Implement
+# Use the data from 08.85
+#
+#     def __str__(self):
+#         # makes a string out of an object
+#         return "Phonebook(" + str(self.__entries) + ")"
+#
+#     # used when there is no __str__ method.
+#     def __repr__(self):
+#         return "Phonebook(" + str(self.__entries) + ")"
+#
+#     def __len__(self):
+#         return len(self.__entries)
+#
+# book = Phonebook()
+# book.add("Doe", "1234567")
+# book.add("Miller", "3456789")
+# print(book)
+# print(len(book))
+
+# 08.87 - Inheritance in Python
+class Student():
+    def __init__(self, firstname, lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.term = 1
+
+    def name(self):
+        return self.firstname + " " + self.lastname
+
+# workingStudent inherits the name function from Student
+class workingStudent(Student):
+    def __init__(self, firstname, lastname, company):
+        # super class goes back to Student and inherits firstname and lastname
+        super().__init__(firstname,lastname)
+        self.company = company
+
+    def name(self):
+        return "Working Student: " + super().name() + ", " + self.company
+
+student = workingStudent("John","Doe", "ABC Company")
+print(student.name())
+
+students = [
+    workingStudent("Max","Miller","ABC Company"),
+    Student("Monika","Fischer"),
+    Student("Erik","Beric"),
+    workingStudent("Franziska","Brewer","Beer Company")
+]
+
+for student in students:
+    print(student.name())
