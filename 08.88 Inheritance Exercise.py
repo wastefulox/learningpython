@@ -5,19 +5,27 @@
 # Important: Leave the reading of the file to FileReader, and extend the lines() method in the CsvReader class by the functionality, which is needed, so that the multidimentional list is returned.
 
 class FileReader():
-    pass
+    def __init__(self, fileLoc):
+        self.fileLoc = fileLoc
+
+    def lines(self):
+        return self.fileLoc
+        # with (self.fileLoc, "r") as file:
+        #     for line in file:
+        #         lineSplit = line.strip().split(";")
+        #         return lineSplit
 
 class CsvReader():
     pass
 
-f = FileReader(./file.csv)
+f = FileReader("./file.csv")
 print(f.lines())
 
 # expected output:
 # [surname, first_name, Doe, John, Miller, Monica]
 
-f = CsvReader("./file.csv")
-print(f.lines())
+# f = CsvReader("./file.csv")
+# print(f.lines())
 
 # expected output
 # [['surname', 'first_name'], ['Doe', 'John'], ['Miller', 'Monica']]
