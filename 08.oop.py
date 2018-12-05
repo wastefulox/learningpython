@@ -134,34 +134,34 @@ class Phonebook():
 # print(len(book))
 
 # 08.87 - Inheritance in Python
-class Student():
-    def __init__(self, firstname, lastname):
-        self.firstname = firstname
-        self.lastname = lastname
-        self.term = 1
-
-    def name(self):
-        return self.firstname + " " + self.lastname
-
-# workingStudent inherits the name function from Student
-class workingStudent(Student):
-    def __init__(self, firstname, lastname, company):
-        # super class goes back to Student and inherits firstname and lastname
-        super().__init__(firstname,lastname)
-        self.company = company
-
-    def name(self):
-        return "Working Student: " + super().name() + ", " + self.company
-
-student = workingStudent("John","Doe", "ABC Company")
-print(student.name())
-
-students = [
-    workingStudent("Max","Miller","ABC Company"),
-    Student("Monika","Fischer"),
-    Student("Erik","Beric"),
-    workingStudent("Franziska","Brewer","Beer Company")
-]
-
-for student in students:
-    print(student.name())
+# class Student():
+#     def __init__(self, firstname, lastname):
+#         self.firstname = firstname
+#         self.lastname = lastname
+#         self.term = 1
+#
+#     def name(self):
+#         return self.firstname + " " + self.lastname
+#
+# # workingStudent inherits the name function from Student
+# class workingStudent(Student):
+#     def __init__(self, firstname, lastname, company):
+#         # super class goes back to Student and inherits firstname and lastname
+#         super().__init__(firstname,lastname)
+#         self.company = company
+#
+#     def name(self):
+#         return "Working Student: " + super().name() + ", " + self.company
+#
+# student = workingStudent("John","Doe", "ABC Company")
+# print(student.name())
+#
+# students = [
+#     workingStudent("Max","Miller","ABC Company"),
+#     Student("Monika","Fischer"),
+#     Student("Erik","Beric"),
+#     workingStudent("Franziska","Brewer","Beer Company")
+# ]
+#
+# for student in students:
+#     print(student.name())
