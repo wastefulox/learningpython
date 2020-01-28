@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d2cbadc-af27-4abb-a101-a563423deceb" name="Default Changelist" comment="section 6 and 7 files committed, by type of content covered">
-      <change afterPath="$PROJECT_DIR$/classes_01_Types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_03_Instantiation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_04_OOP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_05_ClassVariables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_06_Methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_07_MethodsWithArguments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_08_Constructors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_09_InstanceVariables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_10_AttributeFunctions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_11_self.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_12_EverytingIsAnObject.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_13_StringRepresentation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_14_review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_15_Inheritance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_16_Exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes_17_Super.py" afterDir="false" />
+    <list default="true" id="9d2cbadc-af27-4abb-a101-a563423deceb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/classes_18_Interfaces.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes_19_polymorphism.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes_20_DunderMethods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes_21_DunderMethodsII.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes_22_review.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes_project_fazoolin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +33,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Wasteful Ox &lt;mathew.sturdevant@my.strayer.edu&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WGaqWxboLqJnc0toSKO18HtDxA" />
@@ -63,7 +58,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.classes_14_review">
+  <component name="RunManager" selected="Python.classes_project_fazoolin">
     <configuration name="08.oop" type="PythonConfigurationType" factoryName="Python">
       <module name="pythonClass01" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,28 +80,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="classes_01_Types" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pythonClass01" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classes_01_Types.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="classes_07_MethodsWithArguments" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="classes_19_polymorphism" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonClass01" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +92,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classes_07_MethodsWithArguments.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classes/classes_19_polymorphism.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="classes_08_Constructors" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="classes_20_DunderMethods" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonClass01" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,7 +113,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classes_08_Constructors.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classes/classes_20_DunderMethods.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,7 +122,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="classes_10_AttributeFunctions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="classes_21_DunderMethodsII" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonClass01" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,7 +134,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classes_10_AttributeFunctions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classes/classes_21_DunderMethodsII.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,7 +143,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="classes_14_review" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="classes_22_review" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonClass01" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -181,7 +155,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classes_14_review.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classes/classes_22_review.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="classes_project_fazoolin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classes/classes_project_fazoolin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,19 +187,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.08.oop" />
-      <item itemvalue="Python.classes_01_Types" />
-      <item itemvalue="Python.classes_07_MethodsWithArguments" />
-      <item itemvalue="Python.classes_08_Constructors" />
-      <item itemvalue="Python.classes_10_AttributeFunctions" />
-      <item itemvalue="Python.classes_14_review" />
+      <item itemvalue="Python.classes_19_polymorphism" />
+      <item itemvalue="Python.classes_20_DunderMethods" />
+      <item itemvalue="Python.classes_21_DunderMethodsII" />
+      <item itemvalue="Python.classes_22_review" />
+      <item itemvalue="Python.classes_project_fazoolin" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.classes_14_review" />
-        <item itemvalue="Python.classes_10_AttributeFunctions" />
-        <item itemvalue="Python.classes_08_Constructors" />
-        <item itemvalue="Python.classes_07_MethodsWithArguments" />
-        <item itemvalue="Python.classes_01_Types" />
+        <item itemvalue="Python.classes_project_fazoolin" />
+        <item itemvalue="Python.classes_22_review" />
+        <item itemvalue="Python.classes_21_DunderMethodsII" />
+        <item itemvalue="Python.classes_20_DunderMethods" />
+        <item itemvalue="Python.classes_19_polymorphism" />
       </list>
     </recent_temporary>
   </component>
@@ -238,34 +233,46 @@
       <option name="project" value="LOCAL" />
       <updated>1541900465336</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated content from Codecademy class">
+      <created>1578786222633</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578786222633</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="section 6 and 7 files committed, by type of content covered" />
-    <option name="LAST_COMMIT_MESSAGE" value="section 6 and 7 files committed, by type of content covered" />
+    <MESSAGE value="updated content from Codecademy class" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated content from Codecademy class" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1419" height="306" key="GridCell.Tab.0.bottom" timestamp="1578786177288">
+    <state x="339" y="64" key="CommitChangelistDialog2" timestamp="1578786222444">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1419" height="306" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1578786177288" />
-    <state width="1419" height="306" key="GridCell.Tab.0.center" timestamp="1578786177287">
+    <state x="339" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578786222444" />
+    <state width="1419" height="306" key="GridCell.Tab.0.bottom" timestamp="1580170105404">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1419" height="306" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1578786177287" />
-    <state width="1419" height="306" key="GridCell.Tab.0.left" timestamp="1578786177287">
+    <state width="1419" height="306" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580170105404" />
+    <state width="1419" height="306" key="GridCell.Tab.0.center" timestamp="1580170105403">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1419" height="306" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1578786177287" />
-    <state width="1419" height="306" key="GridCell.Tab.0.right" timestamp="1578786177288">
+    <state width="1419" height="306" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580170105403" />
+    <state width="1419" height="306" key="GridCell.Tab.0.left" timestamp="1580170105403">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1419" height="306" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1578786177288" />
-    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1578785213459">
+    <state width="1419" height="306" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580170105403" />
+    <state width="1419" height="306" key="GridCell.Tab.0.right" timestamp="1580170105404">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1578785213459" />
+    <state width="1419" height="306" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580170105404" />
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1580087543732">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1580087543732" />
   </component>
   <component name="masterDetails">
     <states>
